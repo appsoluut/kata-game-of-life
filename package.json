@@ -1,0 +1,35 @@
+{
+  "name": "game-of-life",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "coverage": "npx jest --coverage",
+    "compile": "npx tsc",
+    "update-kata": "npx tsc && node dist/main.js",
+    "kata": "node dist/main.js",
+    "help": "echo \"Useful commands in this project:\n- 'npm run help' - see useful commands.\n- 'npm run test' - run all tests.\n- 'npm run coverage' - run all tests and generate a coverage report.\n- 'npm run compile' - compile the TypeScript code to JavaScript (output goes to /dist).\n- 'npm run kata' - run the kata (executes main.js).\n- 'npm run update-kata' - compile latest code and run the kata (executes main.js).\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-prettier": "^5.5.1",
+    "jest": "^30.0.4",
+    "jest-each": "^30.0.2",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.0"
+  }
+}
