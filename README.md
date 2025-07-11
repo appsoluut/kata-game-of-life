@@ -12,3 +12,8 @@ The universe of the Game of Life is an infinite, two-dimensional orthogonal grid
 - Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed, live or dead; births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick.Each generation is a pure function of the preceding one. The rules continue to be applied repeatedly to create further generations.
+
+### Tests
+
+- [Test Results](https://appsoluut.github.io/kata-game-of-life/)
+- [Code Coverage](https://appsoluut.github.io/kata-game-of-life/lcov-report/)
