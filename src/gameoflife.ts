@@ -6,6 +6,19 @@
  * through generations based on a set of rules.
  */
 export class GameOfLife {
+  private seed: string;
+  private liveCells: Set<string> = new Set();
+
+  constructor(seed: string = "") {
+    // Initialize the game with a seed string, which can represent the initial state of the world.
+    // For example, "x" could represent a single live cell.
+    this.seed = seed;
+  }
+
   evolve() {
+  }
+
+  getPopulationCount(): number {
+    return this.liveCells.size;
   }
 }
