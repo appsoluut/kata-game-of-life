@@ -7,8 +7,12 @@ describe('Game of Life should', () => {
     expect(game).toStrictEqual(new GameOfLife());
   });
 
-  test('evolve a world with a single live cell into an empty world', () => {
-    const game = new GameOfLife("x");
+  test.each([
+    'x',
+    ' x'
+  ])
+  ('evolve a world with a single live cell \'%s\' into an empty world', (seed) => {
+    const game = new GameOfLife(seed);
     game.evolve();
     expect(game.getPopulationCount()).toEqual(0);
   });

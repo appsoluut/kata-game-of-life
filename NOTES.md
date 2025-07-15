@@ -2,6 +2,7 @@
 
 - Evolve an empty world into an empty world
 - Evolve a world with a single live cell into an empty world
+- Evolve a world with a live cell with two live neighbours into a world with a single live cell
 
 ⚠️ TODO
 
@@ -11,7 +12,5 @@
 - Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 🚧 WIP
-
-- Evolve a world with a live cell with two live neighbours into a world with a single live cell
 
 🅿️ PARKED
