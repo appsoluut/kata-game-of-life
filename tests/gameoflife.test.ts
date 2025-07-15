@@ -12,4 +12,10 @@ describe('Game of Life should', () => {
     game.evolve();
     expect(game.getPopulationCount()).toEqual(0);
   });
+
+  test('evolve a world with a live cell with two live neighbours into a world with a single live cell', () => {
+    const game = new GameOfLife("xxx");
+    game.evolve();
+    expect(game.getPopulationCount()).toEqual(1);
+  });
 });
